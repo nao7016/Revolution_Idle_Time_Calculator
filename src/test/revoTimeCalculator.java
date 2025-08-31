@@ -1,17 +1,8 @@
 package test;
 
-public class test {
-    private static final int GameSpeed = 1053; // Your Local Game Speed
+import static test.status.*;
 
-    private static final String TimeSun = "2:04:24:22"; // your Sun Rune generate time
-    private static final int RuneSun = 7; // your Sun Rune generate amount
-    private static final String TimeMoon = "3:07:01:34"; // your Moon Rune generate time
-    private static final int RuneMoon = 6; // your Moon Rune generate amount
-
-    private static final int costFall = 1134938; // your cost fall per second
-    private static final double costIncrement = 1.08e150; // your cost Increment/Spawn
-    private static final double specialCostFall = 0.300; // your Special Mineral cost fall
-
+public class revoTimeCalculator {
     public static void main(String[] args) {
         System.out.println("[Sun] Runes: " + RuneSun + ", Time: " + realTime(calcTime(TimeSun)));
         System.out.println("[Moon] Runes: " + RuneMoon + ", Time: " + realTime(calcTime(TimeMoon)));
